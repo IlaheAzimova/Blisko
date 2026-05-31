@@ -1,0 +1,321 @@
+/* ============================================
+   BLISKO — Custom Styles
+   ============================================ */
+
+/* Mobile horizontal scroll fix */
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================
+   Hero Slider Backgrounds
+   ============================================ */
+.hero-bg {
+    background: linear-gradient(135deg, #0b3f64 0%, #1a76b5 60%, #105c8f 100%);
+}
+
+.slide-freezer-bg {
+    background:
+        radial-gradient(circle at 15% 20%, rgba(244, 160, 20, 0.12) 0%, transparent 40%),
+        linear-gradient(135deg, #0a2540 0%, #1a5a8c 50%, #105c8f 100%);
+}
+
+.slide-vinyl-bg {
+    background:
+        radial-gradient(circle at 85% 30%, rgba(255, 255, 255, 0.10) 0%, transparent 45%),
+        linear-gradient(135deg, #0b3f64 0%, #2a7ab5 60%, #1a76b5 100%);
+}
+
+.deal-bg {
+    background: linear-gradient(135deg, #0b3f64, #1a76b5);
+}
+
+/* ============================================
+   Underline Decorator
+   ============================================ */
+.u-line::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 3px;
+    background: #105c8f;
+    border-radius: 2px;
+    margin-top: 8px;
+}
+
+/* ============================================
+   Mobile Menu
+   ============================================ */
+
+
+#mobileMenu.open {
+    display: block;
+}
+
+/* ============================================
+   Hero Slider
+   ============================================ */
+#heroSlider {
+    position: relative;
+    overflow: hidden;
+}
+
+#heroSlider .slides {
+    display: flex;
+    width: 100%;
+    transition: transform 700ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    will-change: transform;
+}
+
+#heroSlider .slide {
+    flex: 0 0 100%;
+    min-width: 100%;
+}
+
+/* Slider arrow buttons */
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #fff;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-arrow:hover {
+    background: rgba(255, 255, 255, 0.28);
+    transform: translateY(-50%) scale(1.06);
+}
+
+.slider-arrow.prev {
+    left: 16px;
+}
+
+.slider-arrow.next {
+    right: 16px;
+}
+
+@media (max-width: 640px) {
+    .slider-arrow {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }
+
+    .slider-arrow.prev {
+        left: 8px;
+    }
+
+    .slider-arrow.next {
+        right: 8px;
+    }
+}
+
+/* Slider dots */
+.slider-dot {
+    width: 32px;
+    height: 6px;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+}
+
+.slider-dot:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.slider-dot.active {
+    background: #f4a014;
+    width: 48px;
+}
+
+/* ============================================
+   Star Rating (clickable)
+   ============================================ */
+.star-rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 1px;
+    direction: ltr;
+}
+
+.star {
+    background: transparent;
+    border: 0;
+    color: #d1d5db;
+    font-size: 18px;
+    line-height: 1;
+    padding: 1px 2px;
+    cursor: pointer;
+    transition: color 0.15s ease, transform 0.15s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.star.filled {
+    color: #f4a014;
+}
+
+.star:hover {
+    transform: scale(1.2);
+}
+
+.star:focus {
+    outline: none;
+}
+
+.star:focus-visible {
+    outline: 2px solid #105c8f;
+    outline-offset: 2px;
+    border-radius: 3px;
+}
+
+/* Hover preview: fill all stars up to hovered one */
+.star-rating:hover .star {
+    color: #f4a014;
+}
+
+.star-rating .star:hover~.star {
+    color: #d1d5db;
+}
+
+/* Slider Arxa Fon Qradiyentləri */
+.hero-bg {
+    background: linear-gradient(135deg, #105c8f 0%, #0b3f64 100%);
+}
+
+.slide-freezer-bg {
+    background: linear-gradient(135deg, #0f5280 0%, #072b47 100%);
+}
+
+.slide-vinyl-bg {
+    background: linear-gradient(135deg, #135d91 0%, #082d49 100%);
+}
+
+.deal-bg {
+    background: linear-gradient(135deg, #0b3f64 0%, #105c8f 100%);
+}
+
+.u-line::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #f4a014;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+/* Aktiv Dot Stil */
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+.slider-dot.active {
+    background-color: #f4a014;
+    width: 24px;
+    border-radius: 5px;
+}
+
+.hero-bg {
+    background: linear-gradient(135deg, #105c8f 0%, #0b3f64 100%);
+}
+
+.slide-freezer-bg {
+    background: linear-gradient(135deg, #0f5280 0%, #072b47 100%);
+}
+
+.slide-vinyl-bg {
+    background: linear-gradient(135deg, #135d91 0%, #082d49 100%);
+}
+
+.deal-bg {
+    background: linear-gradient(135deg, #0b3f64 0%, #105c8f 100%);
+}
+
+.u-line::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #f4a014;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+.slider-dot.active {
+    background-color: #f4a014;
+    width: 24px;
+    border-radius: 5px;
+}
+
+/* ============================================
+   Mobile fine-tuning
+   ============================================ */
+@media (max-width: 640px) {
+
+    /* prevent layout breaks from long words */
+    h1,
+    h2,
+    h3 {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+}
+
+/* Subtle entrance animation for active slides */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-active .slide-content {
+    animation: fadeInUp 0.7s ease-out both;
+}
+
+/* Mobile menu visibility */
+.mobile-menu-closed {
+    display: none !important;
+}

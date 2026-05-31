@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blisko — Premium Labels & Sticker Paper</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        xintegrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="img/blisko.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { DEFAULT: '#105c8f', dark: '#0b3f64', mid: '#1a76b5', light: '#e8f4fc' },
+                        accent: { DEFAULT: '#f4a014', dark: '#c47e00' },
+                    },
+                    fontFamily: {
+                        heading: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        dm: ['"DM Sans"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <div class="fixed w-full z-50 top-0">
+        <!-- TOP BAR -->
+        <div class="bg-brand-dark text-blue-200 text-xs py-2 md:block">
+            <div class="max-w-7xl mx-auto px-4 md:px-6 flex justify-between items-center gap-3">
+                <div class="flex gap-5 items-center">
+                    <a href="tel:+19726630777" class="hover:text-white transition-colors whitespace-nowrap"><i
+                            class="fa-solid fa-phone mr-1"></i> +1 972 663 0777</a>
+                    <span class="hidden sm:inline-flex items-center gap-1.5 whitespace-nowrap">
+                        <span class="text-sm leading-none">🇺🇸 🇨🇦</span>
+                        <span>Available in US &amp; Canada only</span>
+                    </span>
+                </div>
+                <div class="flex gap-5 items-center">
+                    <span class="sm:hidden text-sm leading-none" aria-label="Available in US and Canada only">🇺🇸
+                        🇨🇦</span>
+                    <a href="#about"
+                        class=" md:inline-block hover:text-white transition-colors capitalize text-[14px] ">Everstream
+                        Enterprises</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- HEADER -->
+        <header class="bg-brand sticky top-0 z-50 shadow-lg">
+            <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex items-center justify-between gap-3">
+                <a href="#" class=" shrink-0">
+                    <span class="font-heading font-extrabold text-white text-3xl tracking-wide">BLISKO <sup><i
+                                class="fa-solid fa-trademark text-xs"></i></sup></span>
+                </a>
+
+                <div class="hidden md:flex gap-4">
+                    <a href="https://www.facebook.com/blisko.storeofficial" target="_blank"><button
+                            class="w-10 h-10 rounded-lg bg-[#0494d2] hover:bg-accent text-white text-sm transition-colors"><i
+                                class="fa-brands fa-facebook-f"></i></button></a>
+                    <a href="https://www.instagram.com/blisko_store_?fbclid=IwY2xjawQGLUtleHRuA2FlbQIxMABicmlkETJCdmRrb2lLV1BUM2NjakZQc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHid0esqIUao3cfvizm1DKtSRwixKN57X_RtO1sPrCf3EyWjNdbvSeLMZ-I9n_aem_bMWSh3VffqGCLurWsLD34g"
+                        target="_blank"><button
+                            class="w-10 h-10 rounded-lg bg-[#0494d2] hover:bg-accent text-white text-md transition-colors"><i
+                                class="fa-brands fa-instagram"></i></button></a>
+                    <a href="#"><button
+                            class="w-10 h-10 rounded-lg bg-[#0494d2] hover:bg-accent text-white text-md transition-colors"><i
+                                class="fa-brands fa-tiktok"></i></button></a>
+                </div>
+                <button id="menuToggle" class="md:hidden text-white ml-2">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- MOBILE MENU -->
+        <div id="mobileMenu" class="bg-brand-dark text-white z-40 relative mobile-menu-closed">
+            <div class="px-6 py-4 flex flex-col gap-3 text-sm font-medium">
+                <a href="#" class="border-b border-white/10 pb-3 hover:text-accent">🏠 Home</a>
+                <a href="#products" class="border-b border-white/10 pb-3 hover:text-accent">🔥 All Products</a>
+                <a href="#freezer" class="border-b border-white/10 pb-3 hover:text-accent">Freezer Labels</a>
+                <a href="#vinyl" class="border-b border-white/10 pb-3 hover:text-accent">Vinyl Sticker </a>
+                <a href="https://www.amazon.com/stores/BLISKO/page/6B063B98-9BA8-4C99-9A85-EB5A1F29D515" target="_blank"
+                    class="text-accent font-bold">🛒 Shop on Amazon →</a>
+            </div>
+        </div>
+
+        <!-- NAV desktop -->
+        <nav class="bg-brand-dark hidden md:block border-t border-white/10">
+            <div class="max-w-7xl mx-auto px-6 flex items-center">
+                <a href="#" class="text-white/90 hover:bg-white/10 px-4 py-3 text-sm font-medium transition-colors">🏠
+                    Home</a>
+                <a href="#about"
+                    class="text-white/90 hover:bg-white/10 px-4 py-3 text-sm font-medium transition-colors">About</a>
+                <a href="#products"
+                    class="text-accent hover:bg-white/10 px-4 py-3 text-sm font-medium transition-colors">🔥
+                    All Products</a>
+                <a href="#freezer"
+                    class="text-white/90 hover:bg-white/10 px-4 py-3 text-sm font-medium transition-colors">Freezer
+                    Labels</a>
+                <a href="#vinyl"
+                    class="text-white/90 hover:bg-white/10 px-4 py-3 text-sm font-medium transition-colors">Vinyl
+                    Sticker
+                </a>
+            </div>
+        </nav>
+
+
+    </div>
+    <div class="mt-[110px] md:mt-[160px]">
+        <!-- HERO SLIDER -->
+        <section class="max-w-7xl mx-auto px-4 md:px-6 mt-6">
+            <div id="heroSlider" class="slider relative rounded-2xl overflow-hidden shadow-xl">
+                <div class="slides flex transition-transform duration-700 ease-out will-change-transform">
+
+                    <!-- SLIDE 1: BRAND / COMPANY -->
+                    <div class="slide w-full shrink-0 hero-bg relative overflow-hidden">
+                        <div class="absolute -top-20 -right-20 w-96 h-96 rounded-full bg-white/5 pointer-events-none">
+                        </div>
+                        <div class="absolute -bottom-24 -left-16 w-72 h-72 rounded-full bg-white/5 pointer-events-none">
+                        </div>
+                        <div
+                            class="absolute top-1/3 right-1/4 w-2 h-2 rounded-full bg-accent/60 pointer-events-none hidden md:block">
+                        </div>
+                        <div
+                            class="absolute top-2/3 right-1/3 w-3 h-3 rounded-full bg-white/30 pointer-events-none hidden md:block">
+                        </div>
+
+                        <div
+                            class="relative z-10 px-6 md:px-14 pt-8 pb-16 grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 items-center min-h-[440px] md:min-h-[480px]">
+                            <div class="max-w-xl md:ml-5">
+                                <span
+                                    class="inline-block tracking-[2px] bg-accent text-white text-[13px] font-bold capitalize px-4 py-1.5 rounded-full mb-5">
+                                    A Brand by Everstream Enterprises
+                                </span>
+                                <h1
+                                    class="font-heading text-4xl md:text-6xl font-extrabold text-white leading-[1.05] mb-4 tracking-tight">
+                                    BLISKO<sup class="text-accent text-xl md:text-2xl ml-1"><i
+                                            class="fa-solid fa-trademark"></i></sup>
+                                </h1>
+                                <p class="text-blue-200 text-base md:text-lg leading-relaxed mb-7">
+                                    A proud product line of <strong class="text-white">Everstream Enterprises</strong> —
+                                    premium label & sticker essentials trusted by homes, restaurants, and small
+                                    businesses
+                                    across the <strong class="text-white">United States &amp; Canada</strong>.
+                                </p>
+                                <div class="flex flex-col sm:flex-row gap-3">
+                                    <a href="https://www.amazon.com/stores/BLISKO/page/6B063B98-9BA8-4C99-9A85-EB5A1F29D515"
+                                        target="_blank"
+                                        class="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark text-white font-semibold px-7 py-4 rounded-xl transition-all hover:-translate-y-0.5 text-base shadow-lg">
+                                        🛒 Shop on Amazon →
+                                    </a>
+                                    <a href="#about"
+                                        class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-7 py-4 rounded-xl transition-all backdrop-blur-sm border border-white/15 text-base">
+                                        About Us
+                                    </a>
+                                </div>
+                                <p class="text-blue-300/80 text-xs mt-4 inline-flex items-center gap-1.5">
+                                    <span class="text-sm leading-none">🇺🇸 🇨🇦</span>
+                                    <span>Shipping available in the United States &amp; Canada only</span>
+                                </p>
+                            </div>
+
+                            <!-- MOBILDE VƏ DESKTOPDA GÖRÜNƏN LOGO BLOKU -->
+                            <div
+                                class="flex flex-row md:flex-col items-center justify-center shrink-0 md:mr-5 gap-4 md:gap-3 mt-4 w-full md:w-auto">
+                                <div class="flex items-center md:items-end gap-4 lg:gap-6">
+                                    <!-- BLISKO LOGO -->
+                                    <div class="relative">
+                                        <div class="absolute inset-0 bg-accent/30 blur-2xl rounded-full"></div>
+                                        <img src="img/logo.jpg" alt="Blisko logo"
+                                            class="relative w-24 h-24 sm:w-32 md:w-36 lg:w-44 lg:h-44 rounded-2xl md:rounded-3xl object-cover shadow-2xl border-2 md:border-4 border-white/20 transform md:-rotate-3 hover:rotate-0 transition-transform duration-500">
+                                    </div>
+                                    <!-- AMAZON LOGO -->
+                                    <div class="relative">
+                                        <div class="absolute inset-0 bg-[#ff9900]/30 blur-2xl rounded-full"></div>
+                                        <div
+                                            class="relative w-24 h-24 sm:w-32 md:w-36 lg:w-44 lg:h-44 rounded-2xl md:rounded-3xl shadow-2xl border-2 md:border-4 border-white/20 bg-white flex items-center justify-center p-3 transform md:rotate-3 md:translate-y-4 hover:rotate-0 hover:translate-y-0 transition-transform duration-500">
+                                            <svg viewBox="0 0 140 60" xmlns="http://www.w3.org/2000/svg"
+                                                class="w-full h-auto" aria-label="amazon">
+                                                <text x="70" y="34" text-anchor="middle"
+                                                    font-family="'Plus Jakarta Sans', Arial, sans-serif"
+                                                    font-weight="800" font-size="30" fill="#232f3e"
+                                                    letter-spacing="-1">amazon</text>
+                                                <path d="M 28 44 Q 70 60 112 44" stroke="#ff9900" stroke-width="3.5"
+                                                    fill="none" stroke-linecap="round" />
+                                                <polygon points="112,44 104,40 105,49" fill="#ff9900" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p
+                                    class="text-blue-200/80 text-[10px] md:text-xs uppercase tracking-[2px] font-semibold mt-2 md:mt-5 text-center">
+                                    Available on Amazon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 2: FREEZER LABELS -->
+                    <div class="slide w-full shrink-0 slide-freezer-bg relative overflow-hidden">
+                        <div class="absolute -top-20 -left-20 w-96 h-96 rounded-full bg-white/5 pointer-events-none">
+                        </div>
+                        <div
+                            class="absolute -bottom-24 -right-16 w-72 h-72 rounded-full bg-accent/10 pointer-events-none">
+                        </div>
+
+                        <div
+                            class="relative z-10 px-6 md:px-14 pt-8 pb-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center min-h-[440px] md:min-h-[480px]">
+                            <div class="max-w-xl md:ml-5">
+                                <span
+                                    class="inline-block bg-accent text-white text-[13px] font-bold tracking-[2px] capitalize px-4 py-1.5 rounded-full mb-5">
+                                    Best Seller · Freezer Labels
+                                </span>
+                                <h2
+                                    class="font-heading text-3xl md:text-5xl font-extrabold text-white leading-[1.1] mb-4 tracking-tight">
+                                    Premium <span class="text-accent">Freezer Labels</span><br>That Actually Stick
+                                </h2>
+                                <p class="text-blue-200 text-base md:text-lg leading-relaxed mb-7">
+                                    Removable. <strong class="text-white">No sticky residue.</strong>
+                                    Temperature-resistant
+                                    from <strong class="text-white">-30°C to 60°C</strong>. Perfect for kitchens &
+                                    restaurants.
+                                </p>
+                                <a href="#freezer"
+                                    class="inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-white font-semibold px-7 py-4 rounded-xl transition-all hover:-translate-y-0.5 text-base shadow-lg">
+                                    Shop Freezer Labels →
+                                </a>
+                            </div>
+
+                            <!-- PREMIUM BLEND BACKGROUND IMAGE CONTAINER (DÜZƏLDİLMİŞ RESPONSİV QUTU) -->
+                            <div class="relative flex items-center justify-center mt-6 lg:mt-0 w-full">
+                                <div
+                                    class="relative rounded-3xl p-4  backdrop-blur-md border border-white/10 shadow-2xl max-w-xs md:max-w-sm w-full flex items-center justify-center overflow-hidden">
+                                    <!-- Zərif arxa fon qradiyent effekti -->
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-tr from-brand-dark/30 to-transparent pointer-events-none">
+                                    </div>
+                                    <img src="img/f2.png" alt="500 Pcs Freezer Labels"
+                                        class="relative w-full h-auto object-contain block rounded-2xl mix-blend-multiply transition-all duration-300 hover:scale-105">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 3: VINYL STICKER PAPER -->
+                    <div class="slide w-full shrink-0 slide-vinyl-bg relative overflow-hidden">
+                        <div class="absolute -top-20 -right-20 w-96 h-96 rounded-full bg-white/5 pointer-events-none">
+                        </div>
+                        <div
+                            class="absolute -bottom-24 -left-16 w-72 h-72 rounded-full bg-accent/10 pointer-events-none">
+                        </div>
+
+                        <div
+                            class="relative z-10 px-6 md:px-14 pt-8 pb-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center min-h-[440px] md:min-h-[480px]">
+                            <div class="max-w-xl order-1 md:ml-5">
+                                <span
+                                    class="inline-block bg-accent text-white text-[13px] font-bold tracking-[2px] capitalize px-4 py-1.5 rounded-full mb-5">
+                                    New Arrival · Vinyl Sticker Paper
+                                </span>
+                                <h2
+                                    class="font-heading text-3xl md:text-5xl font-extrabold text-white leading-[1.1] mb-4 tracking-tight">
+                                    Printable <span class="text-accent">Vinyl Stickers</span><br>Matte & Glossy
+                                </h2>
+                                <p class="text-blue-200 text-base md:text-lg leading-relaxed mb-7">
+                                    <strong class="text-white">Waterproof</strong> · <strong
+                                        class="text-white">Fade-resistant</strong> · Works with any inkjet or laser
+                                    printer.
+                                    Choose matte or glossy finish.
+                                </p>
+                                <a href="#vinyl"
+                                    class="inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-white font-semibold px-7 py-4 rounded-xl transition-all hover:-translate-y-0.5 text-base shadow-lg">
+                                    Shop Vinyl Stickers →
+                                </a>
+                            </div>
+
+                            <!-- PREMIUM BLEND BACKGROUND IMAGE CONTAINER FOR STICKERS (DÜZƏLDİLMİŞ RESPONSİV QUTU) -->
+                            <div
+                                class="relative order-2 flex items-center justify-center gap-4 md:gap-6 mt-8 lg:mt-0 w-full">
+                                <!-- Matte Sticker Box -->
+                                <div
+                                    class="relative rounded-2xl p-3  backdrop-blur-md border border-white/10 shadow-xl transform -rotate-3 hover:rotate-0 transition-all duration-500 max-w-[140px] sm:max-w-[180px] lg:max-w-[220px]">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-tr from-brand-dark/20 to-transparent pointer-events-none">
+                                    </div>
+                                    <img src="img/v1.webp" alt="Matte Vinyl Sticker Paper"
+                                        class="relative w-full h-auto object-contain block rounded-xl mix-blend-multiply transition-all duration-300">
+                                </div>
+                                <!-- Glossy Sticker Box -->
+                                <div
+                                    class="relative rounded-2xl p-3  backdrop-blur-md border border-white/10 shadow-xl transform rotate-3 translate-y-4 hover:rotate-0 hover:translate-y-0 transition-all duration-500 max-w-[140px] sm:max-w-[180px] lg:max-w-[220px]">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-tr from-brand-dark/20 to-transparent pointer-events-none">
+                                    </div>
+                                    <img src="img/v4.webp" alt="Glossy Vinyl Sticker Paper"
+                                        class="relative w-full h-auto object-contain block rounded-xl mix-blend-multiply transition-all duration-300">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Arrows -->
+                <button type="button" id="sliderPrev" aria-label="Previous slide"
+                    class="slider-arrow absolute left-3 md:left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/15 hover:bg-white/30 backdrop-blur-md text-white flex items-center justify-center transition-all border border-white/20 z-20">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button type="button" id="sliderNext" aria-label="Next slide"
+                    class="slider-arrow absolute right-3 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/15 hover:bg-white/30 backdrop-blur-md text-white flex items-center justify-center transition-all border border-white/20 z-20">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+                <!-- Dots -->
+                <div id="sliderDots" class="absolute bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+                    <button type="button" class="slider-dot active" data-i="0" aria-label="Go to slide 1"></button>
+                    <button type="button" class="slider-dot" data-i="1" aria-label="Go to slide 2"></button>
+                    <button type="button" class="slider-dot" data-i="2" aria-label="Go to slide 3"></button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+    <!-- FEATURES -->
+    <section class="max-w-7xl mx-auto px-4 md:px-6 mt-6 grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
+        <div
+            class="bg-brand-light border border-brand/20 rounded-xl p-3 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 shadow-sm">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-brand-light flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-brand" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                </svg>
+            </div>
+            <div class="min-w-0">
+                <p class="font-semibold text-xs sm:text-sm">Top Rated Brand</p>
+                <p class="text-xs text-gray-400 mt-0.5">Thousands of 5★</p>
+            </div>
+        </div>
+        <div
+            class="bg-brand-light border border-brand/20 rounded-xl p-3 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 shadow-sm">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-brand-light flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-brand" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+            </div>
+            <div class="min-w-0">
+                <p class="font-semibold text-xs sm:text-sm">100% Satisfaction</p>
+                <p class="text-xs text-gray-400 mt-0.5">30-day returns</p>
+            </div>
+        </div>
+        <div
+            class="bg-brand-light border border-brand/20 rounded-xl p-3 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 shadow-sm">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-brand-light flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-brand" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+            </div>
+            <div class="min-w-0">
+                <p class="font-semibold text-xs sm:text-sm">Free Shipping $35+</p>
+                <p class="text-xs text-gray-400 mt-0.5">US &amp; Canada only</p>
+            </div>
+        </div>
+        <div
+            class="bg-brand-light border border-brand/20 rounded-xl p-3 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 shadow-sm">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-brand-light flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-brand" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </div>
+            <div class="min-w-0">
+                <p class="font-semibold text-xs sm:text-sm">Fast Delivery</p>
+                <p class="text-xs text-gray-400 mt-0.5">🇺🇸 🇨🇦 Ships in 1–2 days</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="max-w-7xl mx-auto px-4 md:px-6 mt-12">
+        <div class="flex items-end justify-between mb-7 gap-4 flex-wrap">
+            <h2 class="font-heading font-bold text-2xl md:text-3xl text-gray-800 u-line">All Products</h2>
+            <a href="https://www.amazon.com/stores/BLISKO/page/6B063B98-9BA8-4C99-9A85-EB5A1F29D515" target="_blank"
+                class="text-brand text-sm font-medium hover:underline">View all on Amazon →</a>
+        </div>
+        <!-- Category pills -->
+        <div class="flex flex-wrap gap-2 mb-8">
+            <a href="#freezer"
+                class="bg-brand text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-brand-dark transition-colors">Freezer
+                Labels</a>
+            <a href="#vinyl-matte"
+                class="bg-white border border-brand text-brand text-sm font-semibold px-4 py-2 rounded-full hover:bg-brand-light transition-colors">Matte
+                Vinyl</a>
+            <a href="#vinyl-glossy"
+                class="bg-white border border-brand text-brand text-sm font-semibold px-4 py-2 rounded-full hover:bg-brand-light transition-colors">Glossy
+                Vinyl</a>
+            <a href="https://www.amazon.com/stores/BLISKO/page/6B063B98-9BA8-4C99-9A85-EB5A1F29D515" target="_blank"
+                class="bg-accent text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-accent-dark transition-colors">Go
+                to my Amazon Store →</a>
+        </div>
+
+        <!-- FREEZER LABELS -->
+        <div id="freezer">
+            <h3 class="font-heading font-bold text-xl text-gray-700 mb-5 pb-2 border-b border-gray-200">Freezer Labels
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-5">
+
+                <!-- P7: Freezer Labels 375Pcs 1x3" 3 Colors -->
+                <div
+                    class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                    <div class="relative bg-gray-50 h-44 md:h-52 flex items-center justify-center p-3">
+                        <img src="img/3.jpg" alt="BLISKO Freezer Labels 375Pcs 1x3 Inch 3 Colors"
+                            class="max-h-full max-w-full object-contain">
+                        <span
+                            class="absolute top-2 left-2 bg-accent text-white text-[10px] font-bold px-2 py-1 rounded-md">TOP</span>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-[11px] text-brand font-semibold uppercase tracking-wide mb-1">Multi-Color</p>
+                        <p class="text-sm font-medium text-gray-800 leading-snug mb-2 h-10 overflow-hidden">Freezer
+                            Labels 375Pcs, 1×3 Inch, Removable Food Labels Stickers — 3 Rolls, 3 Colors</p>
+                        <div class="star-rating mb-2" data-rating="5">
+                            <span class="text-yellow-400">★★★★★</span>
+                        </div>
+                        <div class="flex flex-row gap-2">
+                            <span class="font-heading font-bold text-brand-dark text-lg">$7.99</span>
+                            <a href="https://www.amazon.com/Removable-Stickers-Resistant-Waterproof-Container/dp/B0FQC9HJ15?ref_=ast_sto_dp"
+                                target="_blank"
+                                class="block w-full bg-brand hover:bg-brand-dark text-white text-center text-sm font-semibold py-2.5 px-3 rounded-xl transition-colors">Buy
+                                on Amazon</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- P8: BLISKO 1000 Pcs Freezer Labels 2 Rolls -->
+                <div
+                    class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                    <div class="relative bg-gray-50 h-44 md:h-52 flex items-center justify-center p-3">
+                        <img src="img/4.jpg" alt="BLISKO 1000 Pcs Freezer Labels 2 Rolls"
+                            class="max-h-full max-w-full object-contain">
+                        <span
+                            class="absolute top-2 left-2 bg-green-500 text-white text-[10px] font-bold px-2 py-1 rounded-md">VALUE</span>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-[11px] text-brand font-semibold uppercase tracking-wide mb-1">Bulk Pack</p>
+                        <p class="text-sm font-medium text-gray-800 leading-snug mb-2 h-10 overflow-hidden">BLISKO 1000
+                            Pcs Freezer Labels, 2 Rolls — Removable Food Storage Stickers</p>
+                        <div class="star-rating mb-2" data-rating="5">
+                            <span class="text-yellow-400">★★★★★</span>
+                        </div>
+                        <div class="flex flex-row gap-2">
+                            <span class="font-heading font-bold text-brand-dark text-lg">$9.99</span>
+                            <a href="https://www.amazon.com/Freezer-Refrigerator-Stickers-Resistant-Containers/dp/B0FQCDDKDZ?ref_=ast_sto_dp&th=1"
+                                target="_blank"
+                                class="block w-full bg-brand hover:bg-brand-dark text-white text-center text-sm font-semibold py-2.5 px-3 rounded-xl transition-colors">Buy
+                                on Amazon</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- P9: 500 Pcs Freezer Labels 1x3 Inch -->
+                <div id="dissolvable"
+                    class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                    <div class="relative bg-gray-50 h-44 md:h-52 flex items-center justify-center p-3">
+                        <img src="img/1.jpg" alt="BLISKO 500 Pcs Freezer Labels 1x3 Inch"
+                            class="max-h-full max-w-full object-contain">
+                        <span
+                            class="absolute top-2 left-2 bg-green-500 text-white text-[10px] font-bold px-2 py-1 rounded-md">100+
+                            sold</span>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-[11px] text-brand font-semibold uppercase tracking-wide mb-1">Freezer Labels</p>
+                        <p class="text-sm font-medium text-gray-800 leading-snug mb-2 h-10 overflow-hidden">500 Pcs
+                            Freezer Labels, 1×3 Inch — Removable Food Storage Stickers, No Residue</p>
+                        <div class="star-rating mb-2" data-rating="5">
+                            <span class="text-yellow-400">★★★★★</span>
+                        </div>
+                        <div class="flex flex-row gap-2">
+                            <span class="font-heading font-bold text-brand-dark text-lg">$7.99</span>
+                            <a href="https://www.amazon.com/dp/B0DWNLBTQG" target="_blank"
+                                class="block w-full bg-brand hover:bg-brand-dark text-white text-center text-sm font-semibold py-2.5 px-3 rounded-xl transition-colors">Buy
+                                on Amazon</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- P10: BLISKO 300 Pcs Freezer Labels 2 Colors -->
+                <div
+                    class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                    <div class="relative bg-gray-50 h-44 md:h-52 flex items-center justify-center p-3">
+                        <img src="img/5.jpg" alt="BLISKO 300 Pcs Freezer Labels 2 Colors"
+                            class="max-h-full max-w-full object-contain">
+                        <span
+                            class="absolute top-2 left-2 bg-brand text-white text-[10px] font-bold px-2 py-1 rounded-md">NEW</span>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-[11px] text-brand font-semibold uppercase tracking-wide mb-1">2-Color Pack</p>
+                        <p class="text-sm font-medium text-gray-800 leading-snug mb-2 h-10 overflow-hidden">BLISKO 300
+                            Pcs Freezer Labels 2 Colors — Removable Food Storage Stickers</p>
+                        <div class="star-rating mb-2" data-rating="5">
+                            <span class="text-yellow-400">★★★★★</span>
+                        </div>
+                        <div class="flex flex-row gap-2">
+                            <span class="font-heading font-bold text-brand-dark text-lg">$6.99</span>
+                            <a href="https://www.amazon.com/Freezer-Refrigerator-Stickers-Resistant-Containers/dp/B0DWNHBFTC?ref_=ast_sto_dp&th=1"
+                                target="_blank"
+                                class="block w-full bg-brand hover:bg-brand-dark text-white text-center text-sm font-semibold py-2.5 px-3 rounded-xl transition-colors">Buy
+                                on Amazon</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- P11: Removable Freezer Labels 500pcs 1x2 Inch -->
+                <div
+                    class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                    <div class="relative bg-gray-50 h-44 md:h-52 flex items-center justify-center p-3">
+                        <img src="img/2.jpg" alt="BLISKO Removable Freezer Labels 500pcs 1x2 Inch"
+                            class="max-h-full max-w-full object-contain">
+                        <span
+                            class="absolute top-2 left-2 bg-green-500 text-white text-[10px] font-bold px-2 py-1 rounded-md">100+
+                            sold</span>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-[11px] text-brand font-semibold uppercase tracking-wide mb-1">Freezer Labels</p>
+                        <p class="text-sm font-medium text-gray-800 leading-snug mb-2 h-10 overflow-hidden">Removable
+                            Freezer Labels 500pcs, 1×2 Inch — Waterproof, Oil Resistant, No Residue</p>
+                        <div class="star-rating mb-2" data-rating="5">
+                            <span class="text-yellow-400">★★★★★</span>
+                        </div>
+                        <div class="flex flex-row gap-2">
+                            <span class="font-heading font-bold text-brand-dark text-lg">$7.99</span>
+                            <a href="https://www.amazon.com/Removable-Waterproof-Resistant-Restaurants-Catering/dp/B0DWNW1LZ5?ref_=ast_sto_dp&th=1"
+                                target="_blank"
+                                class="block w-full bg-brand hover:bg-brand-dark text-white text-center text-sm font-semibold py-2.5 px-3 rounded-xl transition-colors">Buy
+                                on Amazon</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- VINYL STICKER PAPER -->
+        <div id="vinyl" class="my-10">
+
+            <!-- MATTE VINYL -->
+            <div id="vinyl-matte">
+                <h3
+                    class="font-heading font-bold text-xl text-gray-700 mb-5 pb-2 border-b border-gray-200 flex items-center gap-3 flex-wrap">
+                    <span>Matte Vinyl Sticker Paper</span>
+                    <span
+                        class="text-[10px] bg-brand-light text-brand font-semibold px-2 py-1 rounded-full uppercase tracking-wider">Matte
+                        Finish</span>
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-5">
+
+                    <!-- P1: Matte Vinyl Sticker Paper 100 Sheets -->
+                    <div
+                        class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                        <div class="relative bg-gray-50 h-44 md:h-52 flex items-center justify-center p-3">
+                            <img src="img/v1.webp" alt="BLISKO Printable Matte Vinyl Sticker Paper 100 Sheets"
+                                class="max-h-full max-w-full object-contain">
+                            <span
+                                class="absolute top-2 left-2 bg-green-500 text-white text-[10px] font-bold px-2 py-1 rounded-md">BEST</span>
+                        </div>
+                        <div class="p-4">
+                            <p class="text-[11px] text-brand font-semibold uppercase tracking-wide mb-1">Matte Vinyl</p>
+                            <p class="text-sm font-medium text-gray-800 leading-snug mb-2 h-10 overflow-hidden">
+                                Printable Vinyl Sticker Paper for Inkjet Printer — Matte, 100 Sheets, 8.5×11"</p>
+                            <div class="star-rating mb-2" data-rating="5">
+                                <span class="text-yellow-400">★★★★★</span>
+                            </div>
+                            <div class="flex flex-row gap-2">
+                                <span class="font-heading font-bold text-brand-dark text-lg">$29.99</span>
+                                <a href="https://www.amazon.com/Printable-Vinyl-Sticker-Inkjet-Printer/dp/B0G92QT297?ref_=ast_sto_dp&th=1"
+                                    target="_blank"
+                                    class="block w-full bg-brand hover:bg-brand-dark text-white text-center text-sm font-semibold py-2.5 px-3 rounded-xl transition-colors">Buy
+                                    on Amazon</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- P2: Matte Vinyl Sticker Paper 30 Sheets -->
+                    <div
+                        class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                        <div class="relative bg-gray-50 h-44 md:h-52 flex items-center justify-center p-3">
+                            <img src="img/v2.jpg" alt="BLISKO Printable Matte Vinyl Sticker Paper 30 Sheets"
+                                class="max-h-full max-w-full object-contain">
+                        </div>
+                        <div class="p-4">
+                            <p class="text-[11px] text-brand font-semibold uppercase tracking-wide mb-1">Matte Vinyl</p>
+                            <p class="text-sm font-medium text-gray-800 leading-snug mb-2 h-10 overflow-hidden">
+                                Printable Vinyl Sticker Paper for Inkjet Printer — Matte, 30 Sheets, 8.5×11"</p>
+                            <div class="star-rating mb-2" data-rating="5">
+                                <span class="text-yellow-400">★★★★★</span>
+                            </div>
+                            <div class="flex flex-row gap-2">
+                                <span class="font-heading font-bold text-brand-dark text-lg">$10.99</span>
+                                <a href="https://www.amazon.com/Printable-Vinyl-Sticker-Inkjet-Printer/dp/B0G92M6394?ref_=ast_sto_dp&th=1"
+                                    target="_blank"
+                                    class="block w-full bg-brand hover:bg-brand-dark text-white text-center text-sm font-semibold py-2.5 px-3 rounded-xl transition-colors">Buy
+                                    on Amazon</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- P3: Matte Vinyl Sticker Paper 18 Sheets -->
+                    <div
+                        class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                        <div class="relative bg-gray-50 h-44 md:h-52 flex items-center justify-center p-3">
+                            <img src="img/v3.jpg" alt="BLISKO Printable Matte Vinyl Sticker Paper 18 Sheets"
+                                class="max-h-full max-w-full object-contain">
+                            <span
+                                class="absolute top-2 left-2 bg-brand text-white text-[10px] font-bold px-2 py-1 rounded-md">NEW</span>
+                        </div>
+                        <div class="p-4">
+                            <p class="text-[11px] text-brand font-semibold uppercase tracking-wide mb-1">Matte Vinyl</p>
+                            <p class="text-sm font-medium text-gray-800 leading-snug mb-2 h-10 overflow-hidden">
+                                Printable Vinyl Sticker Paper for Inkjet Printer — Matte, 18 Sheets, 8.5×11"</p>
+                            <div class="star-rating mb-2" data-rating="5">
+                                <span class="text-yellow-400">★★★★★</span>
+                            </div>
+                            <div class="flex flex-row gap-2">
+                                <span class="font-heading font-bold text-brand-dark text-lg">$7.49</span>
+                                <a href="https://www.amazon.com/Printable-Vinyl-Sticker-Inkjet-Printer/dp/B0G92G4BJG?ref_=ast_sto_dp&th=1"
+                                    target="_blank"
+                                    class="block w-full bg-brand hover:bg-brand-dark text-white text-center text-sm font-semibold py-2.5 px-3 rounded-xl transition-colors">Buy
+                                    on Amazon</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- GLOSSY VINYL -->
+            <div id="vinyl-glossy" class="mt-12">
+                <h3
+                    class="font-heading font-bold text-xl text-gray-700 mb-5 pb-2 border-b border-gray-200 flex items-center gap-3 flex-wrap">
+                    <span>Glossy Vinyl Sticker Paper</span>
+                    <span
+                        class="text-[10px] bg-accent/15 text-accent-dark font-semibold px-2 py-1 rounded-full uppercase tracking-wider">Glossy
+                        Finish</span>
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-5">
+
+                    <!-- P4: Glossy Vinyl Sticker Paper 100 Sheets -->
+                    <div
+                        class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                        <div class="relative bg-gray-50 h-44 md:h-52 flex items-center justify-center p-3">
+                            <img src="img/v4.webp" alt="BLISKO Printable Glossy Vinyl Sticker Paper 100 Sheets"
+                                class="max-h-full max-w-full object-contain">
+                            <span
+                                class="absolute top-2 left-2 bg-green-500 text-white text-[10px] font-bold px-2 py-1 rounded-md">BEST</span>
+                        </div>
+                        <div class="p-4">
+                            <p class="text-[11px] text-brand font-semibold uppercase tracking-wide mb-1">Glossy Vinyl
+                            </p>
+                            <p class="text-sm font-medium text-gray-800 leading-snug mb-2 h-10 overflow-hidden">
+                                Printable Vinyl Sticker Paper for Inkjet Printer — Glossy, 100 Sheets, 8.5×11"</p>
+                            <div class="star-rating mb-2" data-rating="5">
+                                <span class="text-yellow-400">★★★★★</span>
+                            </div>
+                            <div class="flex flex-row gap-2">
+                                <span class="font-heading font-bold text-brand-dark text-lg">$31.99</span>
+                                <a href="https://www.amazon.com/Printable-Vinyl-Sticker-Inkjet-Printer/dp/B0G8YQZQDK?ref_=ast_sto_dp&th=1"
+                                    target="_blank"
+                                    class="block w-full bg-brand hover:bg-brand-dark text-white text-center text-sm font-semibold py-2.5 px-3 rounded-xl transition-colors">Buy
+                                    on Amazon</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- P5: Glossy Vinyl Sticker Paper 18 Sheets -->
+                    <div
+                        class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                        <div class="relative bg-gray-50 h-44 md:h-52 flex items-center justify-center p-3">
+                            <img src="img/v5.jpg" alt="BLISKO Printable Glossy Vinyl Sticker Paper 18 Sheets"
+                                class="max-h-full max-w-full object-contain">
+                        </div>
+                        <div class="p-4">
+                            <p class="text-[11px] text-brand font-semibold uppercase tracking-wide mb-1">Glossy Vinyl
+                            </p>
+                            <p class="text-sm font-medium text-gray-800 leading-snug mb-2 h-10 overflow-hidden">
+                                Printable Vinyl Sticker Paper for Inkjet Printer — Glossy, 18 Sheets, 8.5×11"</p>
+                            <div class="star-rating mb-2" data-rating="5">
+                                <span class="text-yellow-400">★★★★★</span>
+                            </div>
+                            <div class="flex flex-row gap-2">
+                                <span class="font-heading font-bold text-brand-dark text-lg">$7.49</span>
+                                <a href="https://www.amazon.com/Printable-Vinyl-Sticker-Inkjet-Printer/dp/B0G8YY3VNM?ref_=ast_sto_dp&th=1"
+                                    target="_blank"
+                                    class="block w-full bg-brand hover:bg-brand-dark text-white text-center text-sm font-semibold py-2.5 px-3 rounded-xl transition-colors">Buy
+                                    on Amazon</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- P6: Glossy Vinyl Sticker Paper 30 Sheets -->
+                    <div
+                        class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                        <div class="relative bg-gray-50 h-44 md:h-52 flex items-center justify-center p-3">
+                            <img src="img/v6.jpg" alt="BLISKO Printable Glossy Vinyl Sticker Paper 30 Sheets"
+                                class="max-h-full max-w-full object-contain">
+                        </div>
+                        <div class="p-4">
+                            <p class="text-[11px] text-brand font-semibold uppercase tracking-wide mb-1">Glossy Vinyl
+                            </p>
+                            <p class="text-sm font-medium text-gray-800 leading-snug mb-2 h-10 overflow-hidden">
+                                Printable Vinyl Sticker Paper for Inkjet Printer — Glossy, 30 Sheets, 8.5×11"</p>
+                            <div class="star-rating mb-2" data-rating="5">
+                                <span class="text-yellow-400">★★★★★</span>
+                            </div>
+                            <div class="flex flex-row gap-2">
+                                <span class="font-heading font-bold text-brand-dark text-lg">$11.49</span>
+                                <a href="https://www.amazon.com/Printable-Vinyl-Sticker-Inkjet-Printer/dp/B0G8XV59DV?ref_=ast_sto_dp&th=1"
+                                    target="_blank"
+                                    class="block w-full bg-brand hover:bg-brand-dark text-white text-center text-sm font-semibold py-2.5 px-3 rounded-xl transition-colors">Buy
+                                    on Amazon</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- HOT DEAL -->
+    <section class="max-w-7xl mx-auto px-4 md:px-6 mt-14">
+        <div
+            class="deal-bg rounded-2xl px-6 md:px-16 py-12 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden shadow-xl">
+            <div class="absolute -top-16 -right-16 w-64 h-64 rounded-full bg-white/5 pointer-events-none"></div>
+            <div class="relative z-10">
+                <p class="text-accent text-xs font-bold tracking-[2px] uppercase mb-2">⚡ Flash Sale — This Week Only</p>
+                <h2 class="font-heading font-extrabold text-3xl md:text-4xl text-white leading-tight mb-3">Vinyl Sticker
+                    Paper<br>Up to 50% Off</h2>
+                <p class="text-blue-200 mb-6 max-w-sm">Print your own custom labels at home. Works with any inkjet
+                    printer. Waterproof & fade-resistant.</p>
+                <a href="https://www.amazon.com/stores/BLISKO/page/6B063B98-9BA8-4C99-9A85-EB5A1F29D515" target="_blank"
+                    class="inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-white font-semibold px-7 py-3.5 rounded-xl transition-all hover:-translate-y-1">
+                    Shop the Deal →
+                </a>
+            </div>
+            <div class="flex gap-2 sm:gap-3 relative z-10 shrink-0">
+                <div class="text-center">
+                    <div id="cd-d"
+                        class="bg-white/15 text-white font-heading font-extrabold text-2xl sm:text-3xl w-14 h-14 sm:w-16 sm:h-16 rounded-xl flex items-center justify-center">
+                        02</div>
+                    <p class="text-[10px] text-white/60 uppercase tracking-wider mt-2">Days</p>
+                </div>
+                <div class="text-center">
+                    <div id="cd-h"
+                        class="bg-white/15 text-white font-heading font-extrabold text-2xl sm:text-3xl w-14 h-14 sm:w-16 sm:h-16 rounded-xl flex items-center justify-center">
+                        18</div>
+                    <p class="text-[10px] text-white/60 uppercase tracking-wider mt-2">Hours</p>
+                </div>
+                <div class="text-center">
+                    <div id="cd-m"
+                        class="bg-white/15 text-white font-heading font-extrabold text-2xl sm:text-3xl w-14 h-14 sm:w-16 sm:h-16 rounded-xl flex items-center justify-center">
+                        34</div>
+                    <p class="text-[10px] text-white/60 uppercase tracking-wider mt-2">Mins</p>
+                </div>
+                <div class="text-center">
+                    <div id="cd-s"
+                        class="bg-white/15 text-white font-heading font-extrabold text-2xl sm:text-3xl w-14 h-14 sm:w-16 sm:h-16 rounded-xl flex items-center justify-center">
+                        00</div>
+                    <p class="text-[10px] text-white/60 uppercase tracking-wider mt-2">Secs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="max-w-7xl mx-auto px-4 md:px-6 mt-14 mb-12">
+        <div class="bg-white rounded-2xl shadow-sm p-8 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+                <span class="text-[11px] text-brand font-semibold uppercase tracking-wider">About Blisko</span>
+                <h2 class="font-heading font-bold text-2xl md:text-3xl text-gray-800 mt-3 mb-5 u-line">Organization Made
+                    Effortless</h2>
+                <p class="text-gray-500 leading-relaxed mb-4">Our journey began with one clear purpose — to help people
+                    stay organized with practical, reliable label essentials. We believe that even the smallest tools,
+                    when designed with care, can make a meaningful impact in your home and kitchen.</p>
+                <p class="text-gray-500 leading-relaxed mb-6">BLISKO freezer labels leave no residual glue. Our design
+                    ensures a clean application and removal without leaving sticky residue, keeping your containers neat
+                    and damage-free. Temperature resistant from -30°C to 60°C.</p>
+                <div class="bg-brand-light border-l-4 border-brand rounded-lg p-4 mb-6 flex items-start gap-3">
+                    <span class="text-2xl leading-none">🇺🇸🇨🇦</span>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        <strong class="text-brand-dark">Available in the United States &amp; Canada only.</strong> All
+                        BLISKO products are sold and shipped exclusively within the US and Canadian markets via Amazon.
+                    </p>
+                </div>
+                <a href="https://www.amazon.com/stores/BLISKO/page/6B063B98-9BA8-4C99-9A85-EB5A1F29D515" target="_blank"
+                    class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold px-6 py-3 rounded-xl transition-colors">
+                    🛒 View All Products on Amazon
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-3 sm:gap-4">
+                <div class="bg-brand-light rounded-xl p-4 sm:p-5 text-center">
+                    <p class="font-heading font-extrabold text-xl sm:text-3xl text-brand mb-1">11+</p>
+                    <p class="text-xs sm:text-sm text-gray-500">Products Available</p>
+                </div>
+                <div class="bg-brand-light rounded-xl p-4 sm:p-5 text-center">
+                    <p class="font-heading font-extrabold text-xl sm:text-3xl text-brand mb-1">500+</p>
+                    <p class="text-xs sm:text-sm text-gray-500">Happy Customers</p>
+                </div>
+                <div class="bg-brand-light rounded-xl p-4 sm:p-5 text-center">
+                    <p class="font-heading font-extrabold text-xl sm:text-3xl text-brand mb-1">4.7★</p>
+                    <p class="text-xs sm:text-sm text-gray-500">Average Rating</p>
+                </div>
+                <div class="bg-brand-light rounded-xl p-4 sm:p-5 text-center">
+                    <p class="font-heading font-extrabold text-lg sm:text-3xl text-brand mb-1">US &amp; CA</p>
+                    <p class="text-xs sm:text-sm text-gray-500">Markets Served</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="bg-brand-light py-14">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div>
+                <h3 class="font-heading font-bold text-2xl md:text-3xl text-gray-800 mb-2">Get 10% Off Your First Order
+                </h3>
+                <p class="text-gray-500">Subscribe for exclusive deals, new product launches & label tips.</p>
+                <p class="text-xs text-gray-400 mt-2">🇺🇸 🇨🇦 Offer valid in US &amp; Canada only.</p>
+            </div>
+            <div class="flex w-full md:w-auto max-w-md">
+                <input type="email" placeholder="Your email address..."
+                    class="flex-1 px-5 py-3.5 border-2 border-gray-200 focus:border-brand rounded-l-xl outline-none text-sm min-w-0">
+                <button
+                    class="bg-brand hover:bg-brand-dark text-white font-semibold px-6 rounded-r-xl transition-colors text-sm whitespace-nowrap">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 pt-14">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-2 lg:grid-cols-4 gap-10 pb-10">
+            <div class="col-span-2 lg:col-span-1">
+                <div class="flex items-center gap-2 mb-4">
+                    <img src="img/logo.jpg" alt="Blisko" class="w-9 h-9 rounded-full object-cover">
+                    <span class="font-heading font-bold text-white text-xl tracking-wide">BLISKO</span>
+                </div>
+                <p class="text-sm leading-relaxed mb-2">Premium labels and sticker paper for home kitchens, restaurants,
+                    and small businesses. Proudly sold on Amazon.</p>
+                <p class="text-xs text-gray-500 mb-2">A brand by <span class="text-gray-300">Everstream
+                        Enterprises</span>.</p>
+                <div class="flex gap-2">
+                    <a href="https://www.facebook.com/blisko.storeofficial" target="_blank"><button
+                            class="w-9 h-9 rounded-lg bg-white/10 hover:bg-brand text-white text-sm transition-colors"><i
+                                class="fa-brands fa-facebook-f"></i></button></a>
+                    <a href="https://www.instagram.com/blisko_store_?fbclid=IwY2xjawQGLUtleHRuA2FlbQIxMABicmlkETJCdmRrb2lLV1BUM2NjakZQc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHid0esqIUao3cfvizm1DKtSRwixKN57X_RtO1sPrCf3EyWjNdbvSeLMZ-I9n_aem_bMWSh3VffqGCLurWsLD34g"
+                        target="_blank"><button
+                            class="w-9 h-9 rounded-lg bg-white/10 hover:bg-brand text-white text-md transition-colors"><i
+                                class="fa-brands fa-instagram"></i></button></a>
+                    <a href="#"><button
+                            class="w-9 h-9 rounded-lg bg-white/10 hover:bg-brand text-white text-md transition-colors"><i
+                                class="fa-brands fa-tiktok"></i></button></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-heading font-bold text-white text-sm mb-5">Products</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#freezer" class="hover:text-white transition-colors">Freezer Labels</a></li>
+                    <li><a href="#vinyl-matte" class="hover:text-white transition-colors">Matte Vinyl</a></li>
+                    <li><a href="#vinyl-glossy" class="hover:text-white transition-colors">Glossy Vinyl</a></li>
+                    <li><a href="https://www.amazon.com/stores/BLISKO/page/6B063B98-9BA8-4C99-9A85-EB5A1F29D515"
+                            target="_blank" class="hover:text-white transition-colors">Bundle Deals</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-heading font-bold text-white text-sm mb-5">Information</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#about" class="hover:text-white transition-colors">About Blisko</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Terms & Conditions</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Returns & Refunds</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-heading font-bold text-white text-sm mb-5">Shop on Amazon</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="https://www.amazon.com/stores/BLISKO/page/6B063B98-9BA8-4C99-9A85-EB5A1F29D515"
+                            target="_blank" class="hover:text-white transition-colors">Amazon Store</a></li>
+                    <li><a href="https://www.amazon.com/dp/B0DWNLBTQG" target="_blank"
+                            class="hover:text-white transition-colors">Best Seller</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Bulk Order Inquiry</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-white/10">
+            <div
+                class="max-w-7xl mx-auto px-4 md:px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-500">
+                <span>© 2026 Blisko · Everstream Enterprises. All rights reserved. Site by <a
+                        href="https://www.linkedin.com/in/ilaheazimova/" target="_blank"
+                        class="text-[#a8a8a8] transition-colors">Ilahe
+                        Azimova</a></span>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERAKTİV SLIDER SCRIPT -->
+    <script src="js/app.js">
+
+    </script>
+</body>
+
+</html>
