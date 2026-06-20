@@ -9,6 +9,30 @@ body {
     max-width: 100%;
 }
 
+/* ============================================
+   Anchor scroll offset (fixed header compensation)
+   ============================================ */
+#about,
+#products,
+#freezer,
+#vinyl,
+#vinyl-matte,
+#vinyl-glossy {
+    scroll-margin-top: 110px;
+}
+
+@media (min-width: 768px) {
+
+    #about,
+    #products,
+    #freezer,
+    #vinyl,
+    #vinyl-matte,
+    #vinyl-glossy {
+        scroll-margin-top: 170px;
+    }
+}
+
 body {
     font-family: 'DM Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
